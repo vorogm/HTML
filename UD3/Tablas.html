@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS</title>
+    <style>
+        table { 
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 50%; 
+           
+        }       
+        td,th{
+            border: 1px solid #dddddd;
+            text-align: center ;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 8px;
+            border-style:dashed;
+            border-color: black;
+            
+        }
+        tr:nth-child(even){
+            background-color: #dddddd;
+        }
+        th{
+            background-color: black;
+            color: yellow;
+        }
+        
+        
+    </style>        
+</head>
+<body>
+    <table>
+        <th>Lunes</th>   
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        <th>Sábado</th>
+        <th>Domingo</th>
+        <tr>
+            <td>HTML</td>
+            <td>PYTHON</td>
+            <td>HTML</td>
+            <td>PYTHON</td>
+            <td>HTML</td>
+            <td colspan="2" rowspan="2">ESTUDIAR Y EJERCICOS</td>            
+        </tr>
+        <tr>
+            <td colspan="2">LENGUAJE CSS</td>
+            <td rowspan="2">FOL</td>                       
+            <td colspan="2">LENGUAJE JAVA</td>            
+        </tr>
+        <tr>
+            <td colspan="2">BASE DATOS</td>            
+           
+            <td colspan="2">LENGUAJE CSS</td>            
+            <td colspan="2">TIEMPO LIBRE</td>            
+        </tr>        
+    
+</body>
+</html>
