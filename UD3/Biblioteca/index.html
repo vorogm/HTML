@@ -1,38 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca</title>
-    <Style>
-        a {            
-            text-decoration: none;
-         }
-        li{
-            font-family: Arial, Helvetica, sans-serif;
-        } 
-    </Style>
-</head>
-<body>
-   <h1 style="text-align: center;">Biblioteca</h1>
-   <ul>
-        <li>Aventura</li>
-            <ol>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biblioteca</title>
+        <Style>
+            a {            
+                text-decoration: none;
+            }
+            li{
+                font-family: Arial, Helvetica, sans-serif;
+            } 
+        </Style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Biblioteca</h1>
+        <ul>
+                <li>Aventura</li>
+                    <ol>
+                        <li>
+                            <a href="aventuras\Dartañan.html">dartañan</a>
+                        </li>
+                        <li>Tres cerditos</li>
+                        <li>
+                            <a href="aventuras\Wilifog.html">Wili fog</a>
+                        </li>
+                    </ol>
+                <li>Ciencia ficción</li>
+                <li>Drama</li>
+                <li>Terror</li>
+                <li>_____________</li>
                 <li>
-                    <a href="aventuras\Dartañan.html">dartañan</a>
+                    <a href="videos\videos.html">Videos relacionados</a>
                 </li>
-                <li>Tres cerditos</li>
-                <li>
-                    <a href="aventuras\Wilifog.html">Wili fog</a>
-                </li>
-            </ol>
-        <li>Ciencia ficción</li>
-        <li>Drama</li>
-        <li>Terror</li>
-        <li>_____________</li>
-        <li>
-            <a href="videos\videos.html">Videos relacionados</a>
-        </li>
-   </ul>
-</body>
+        </ul>
+        <br><br><br>
+    <!-- AÑADO LA TABLA dentro de tabla para poder centarla-->
+        <table style="padding-right: 200px;
+                        padding-left: 200px;
+                        padding-bottom: 200px;                        
+                        border-color: white;">            
+            <tr>
+                <td>
+                    <table>
+                        <style>
+                            table{
+                                border-style: double;
+                                text-align: center;
+                                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                                width: 100%;
+                            }
+                            tr:nth-child(even){
+                                background-color: #08a1e7;
+                            }
+                            th{                
+                                background-color: blue; 
+                                color: white;                
+                            }
+                            td,tr {
+                                height: 35px;
+                                width: 80px;                                
+                            }                            
+                        </style>
+                        <h1>Diciembre</h1>
+
+                        <tr>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sábado</th>
+                            <th>Domingo</th>
+                        </tr>
+                        <tr style="color: gray;">
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td >30</td>
+                            <td style="color: black;">1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                        </tr>
+                        <tr style="color: gray;">
+                            <td style="color: black;">30</td>
+                            <td style="color: black;">31</td>            
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
