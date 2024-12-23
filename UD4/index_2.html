@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+         <link rel="stylesheet" href="estilo.css">
+     </head>
+     <body>
+          <section>
+             <h1>Contrato de compra-venta</h1>
+             <p>Vamos a completar nuestro primer ejemplo de hoja de estilos. Conforme vayamos avanzando, aplicaremos estilos más complejos con diferentes selectores.</p>
+          </section>
+          <section>
+             <h2>Comprador principal</h2>
+             <p>
+               <strong>Nombre y apellidos: </strong> Luis López<br>
+               <strong>Dirección: </strong> C./ Giner de los ríos, 15-6<br>
+               <strong>CP: </strong> 46023
+             </p>
+             <p class="label"></p>
+          </section>
+          <section>
+             <h2>Educación y formación</h2>
+             <p>
+               <strong>Nombre y apellidos: </strong> Sara Moreno Jimeno<br>
+               <strong>Dirección: </strong> Avd. Del Puerto, 15-9<br>
+               <strong>CP: </strong> 45021
+             </p>
+          </section>
+          <section>
+             <h2>Relación de compra-venta</h2>
+             <h3>Propiedades</h3>
+             <p>
+               <strong>Propiedad 1:  </strong>C/Lorca, 15-26 <em> Madrid.</em><br>
+               <strong>Propiedad 2:  </strong>Avd. Del Puerto, 15-9 <em> Toledo.</em><br>          
+             </p>
+
+             <!-- Provoca el mismo efecto que strong, aunque no es un etiqueta semántica -->
+
+          <section>
+               <h2>Sección de prueba con un selector inventado.</h2>  
+               <p>
+                  <sgm>Diseñador: </sgm>Salvador García.
+               </p>
+          </section>  
+
+          <hr>           
+
+             
+          <footer>
+               <address>Empresa: Transiciones S.L.</address>
+               <address>info@transiciones.org</address>
+
+               <address id="copy">&copy SGM 2024</address>
+          </footer>
+
+     </body>
+</html>
+
+
+
+
+<!--
+Lo primero de todo, pensad que aunque los estilos no queden exactamente iguales no pasa nada. Lo importante es que los
+elementos que tengan estilos diferentes, los sigan teniendo. Dicho esto:
+El texto se compone de elementos con las siguientes etiquetas:
+<h1>, <h2>, <h3>, <p> <em> <strong> <address>
+Recordad: EM aportaba un aspecto en cursiva,pero tenía contenido semántico, al igual que STRONG, que aportaba una apariencia
+en negrita.
+La hoja de estilos tiene las siguientes propiedades:
+Body: Color de fondo laverderbush, fuente sans-serif, alineación justificada.
+H1: Color salmon, alineación centrada, mayúsculas (text-transform: uppercase).
+H2: Color de fondo skyblue, color de letra: teal, subrayado ( text-decoration: underline).
+H3: Color de fondo: thistle, color de texto: steelblue, tamaño de fuente 130%, estilo de fuente: cursiva.
+Párrafo: color de fondo: rosa
+EM: color de texto gris, negrita y cursiva (font-style: italic, font-weight: bold)
+STRONG: color tomato, y SIN negrita
+Address: Color de fondo blanco, negrita y alineación centrada. -->

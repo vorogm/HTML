@@ -1,0 +1,48 @@
+.padre{
+    border: 5px solid black;
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    /*position: static;*/
+    position: relative;
+    background-color: brown;
+   
+}
+.container{
+    background: #09f;
+    width: 100px;
+    height: 100px;
+    position: static;
+    left:0;
+  /*position: sticky;
+    top: 0;
+    left: 0; */
+
+
+}
+.padre1{
+    border: 5px solid black;
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    /*position: static;*/
+    position: relative;
+   
+}
+.container1{
+    background: #09f;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left:0;
+    top: 0;
+  /*position: sticky;
+    top: 0;
+    left: 0; */
+    z-index: 1;
+
+}
+
+body{
+    background: olive;
+}

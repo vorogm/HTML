@@ -1,0 +1,76 @@
+
+body{
+    
+}
+
+
+/**
+<!--    margin
+color de fondo: background-color
+tipo de letra: font-family
+tamaño de letra: font-size
+alineación: text-align
+}
+Cabecera (header):
+○
+margen interior: padding
+○
+color de fondo: background-color
+●
+Título (h1):
+○
+margen: margin
+○
+tamaño de letra: font-size
+○
+alineación: text-align
+●
+Contenido principal (main):
+○
+tipo de caja: display
+○
+borde: border
+○
+margen interior: padding
+●
+Sección (section):
+○
+margen interior inferior: padding-bottom
+○
+color de fondo: background-color
+●
+Secciones consecutivas (section + section):
+○
+margen superior: margin-top
+●
+Título de 2º nivel (h2):
+○
+margen: margin
+○
+margen interior izquierdo: padding-left
+○
+color de fondo: background-color
+●
+Párrafos en sección (section p):
+○
+borde: border
+○
+margen: margin
+○
+margen interior: padding
+○
+color: color
+○
+interlineado: line-height
+●
+Pie de página (footer):
+○
+borde-superior: border-top
+○
+margen: margin
+○
+margen interior: padding
+○
+color de fondo: background-color
+○
+tamaño de letra: font-size -->

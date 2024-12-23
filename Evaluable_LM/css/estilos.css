@@ -1,0 +1,94 @@
+
+body{
+ 
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #f4f3ea;
+}
+p#fondoverde{                /* posiciono el fondo verde */
+    position: relative;
+    background: #4a772f;
+    width: 100vw;
+    height: 220px;   
+    margin-bottom: 0px;    
+}
+
+
+#bosque{
+    position: absolute;
+    top: -1%;
+    size: 50%;
+    width: 100%;
+}
+#logo{
+    position: absolute;
+    left: 75%;
+    top: 2%;
+    width: 100%;
+}
+h1{
+    color: white;
+    font-family: 'Fjalla one', sans-serif;
+    font-size: 2.8rem;
+    text-align: center;
+    position: absolute;
+    top: 1%;
+    left: 31%;
+    
+    /*transform: translate(-50%, -50%); */
+}
+h5{
+    color: #adc4a4;
+    position: absolute;
+    font-size: 1.3rem;
+    top: 10%;
+    left: 43%;
+    
+}
+h5:hover{
+    text-shadow: 2px 2px 2px #82ee54;
+   /* text-shadow: 0 0 10px #fff, 0 0 20px #fff; /* efecto brillo*/
+}
+
+li,a,nav{
+    background-color: green;
+    color: white;
+
+}
+
+ul{
+    
+    list-style-type: none;
+    /*list-style: none; /*  */  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+    /*display: inline-block;*/
+}
+li {
+    float: left;        /* asigno float para que el menú sea horizontal*/
+    font-size: 300px;
+}
+
+  
+ li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 16px;
+    text-decoration: none;
+    width: 100%;
+  }
+  a:hover{
+    background: yellow; /* #4a772f;*/
+    border: 2px solid yellow;
+    border-radius: 3% 3%;
+ }
+  #elementouno{
+    margin-left: 37%;       /*  Desplazo el menu para que quede centrao */
+}
+#inicio{
+    text-decoration: underline;
+}
