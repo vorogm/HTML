@@ -1,0 +1,42 @@
+section{
+    border: 5px solid black;
+    width: 300px;
+    height: 600px;
+    background: yellow;
+    position: relative;
+    margin-top: 50px;
+    padding: 200px;
+}
+div{
+    border: 5px solid black;
+/*    opacity: .9;*/
+    width: 200px;
+    height: 200px;
+    background: #09f;
+    margin-top: -100px;
+    box-shadow: 0 0 5px #000000dd;
+    position: relative;
+}
+ 
+div:first-child{
+    background-color: red;
+    z-index: 2;
+    left: -100px
+ }
+div:last-child{
+    background: brown;
+    top: -100px;
+    left: 150px;
+    z-index: 4;
+}
+div:nth-child(2){
+    background: grey;
+    z-index: 1;
+    
+ }
+ div:nth-child(2):hover{
+    z-index: 5;
+ }
+ div:nth-child(2):active{
+    z-index: 3;
+ }

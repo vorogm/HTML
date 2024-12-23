@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        TABLA AGRUPADA
+    </p>
+    <table style="background-color: brown;">
+        <tr>
+            <td>
+                <table>
+                    <style>
+                        table{
+                            border: solid black;
+                            border-collapse: collapse;
+                        }
+                        th{
+                            border: solid 1px black;
+                            padding: 2px;
+                            text-align: center;
+                            column-width: 120px;
+                        }
+                        td{
+                            border: solid 1px black;
+                            padding: 2px;
+                            text-align: center;                           
+                        }
+                        
+
+                    </style>
+                    <colgroup>
+                        <col style="background-color: red;">
+                        <col span="3" style="background-color: yellow;">
+                        <col style="background-color: lightgreen;">
+                    </colgroup>
+                    <caption style="padding: 4px; 
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    background-color: cadetblue;"
+                                    ><b>Análisis de ventas anuales</b></caption>
+                    <tr>
+                        <th>AÑO</th>
+                        <th>Producto A</th>
+                        <th>Producto B</th>
+                        <th>Producto C</th>
+                        <th>Producto D</th>
+                    </tr>
+                    <tr>
+                        <td>N-1</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

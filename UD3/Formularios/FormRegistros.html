@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <style>
+        form,input{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            
+        }
+    </style>
+    <h1>Formulario de registro</h1>
+    <form>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" id="apellido" name="apellido" ><br><br>
+        <label for="sexo">Sexo: </label>
+        <input type="radio" id="hombre" name="sexo" value="Hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="Mujer">
+        <label for="mujer">Mujer</label><br><br>
+        <label for="correo">Correo: </label>
+        <input type="text" id="correo" name="correo"><br><br>
+        <input type="checkbox" checked>Deseo recibir información sobre novedades y ofertas<br><br>
+        <input type="checkbox"> Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos<br><br>        
+        <input type="submit" value="Enviar">
+        
+    </form>
+    
+</body>
+</html>

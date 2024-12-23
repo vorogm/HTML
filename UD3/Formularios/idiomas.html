@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="español">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Idiomas</title>
+</head>
+<body>
+    <form>
+        <style>
+            input,label,select,legend{                 
+                font-family: Arial, Helvetica, sans-serif; 
+                font-size: 18px;
+            }
+
+        </style>
+        <fieldset style="width: 370px;">
+            <legend>Rellenar</legend>
+            <input type="radio" id="ingles" name="idioma" value="idiomaingles">
+            <label for="ingles">Inglés</label><br>
+            <input type="radio" id="aleman" name="idioma" value="idiomaaleman">
+            <label for="aleman">Alemán</label><br>
+            <input type="radio" id="frances" name="idioma" value="idiomafrances">
+            <label for="frances">Francés</label><br><br>
+            <select name="conector" id="conector">
+                <option value="usb">USB</option>
+                <option value="paralelo">Paralelo</option>
+                <option value="ps2">PS2</option>
+            </select><br><br>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos">
+        </fieldset><br>
+        <fieldset style="width: 370px;">
+            <legend>Indique sus preferencias por favor</legend>
+            <select name="sexo" id="sexo" multiple>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select><br>
+            <input type="checkbox" id="mujer" name="sexo" value="sexomujer">
+            <label for="mujer">Mujer</label><br>
+            <input type="checkbox" id="hombre" name="sexo" value="sexohombre">
+            <label for="nombre">Hombre</label><br>
+            <label for="fecha">Elija una fecha: </label>
+            <input type="date" id="fecha" value="2024-11-29" name="fecha">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

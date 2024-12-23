@@ -1,0 +1,227 @@
+#caja{
+    border: 30px solid red;
+    
+    width: 80px;
+    height: 80px;
+    border-radius: 0 0 0 0;
+    
+}
+#caja:hover{
+    /* padding: 10px;
+    margin: 50px; */
+    box-shadow: 0px 0px 0px 5px black inset,
+     0px 0px 0px 10px yellow inset,
+     0px 0px 0px 15px blue inset,
+     0px 0px 0px 2px pink inset;
+
+
+}
+#dos{
+    width: 250px;
+    height: 200px;
+    border: 5px solid red;
+    background: lightgray;
+    margin: 25px; 
+    padding: 10px;
+}
+#bolder{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+#bold{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+#lighter{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:lighter;
+}
+#oblique{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    font-style: oblique;
+}
+#baseline{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    vertical-align:baseline ;
+    border: 1px solid black;
+}
+#bottom{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    vertical-align:bottom ;
+    border: 1px solid black;
+}
+#variant{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    font-variant:small-caps;
+    
+}
+#lineheight{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid black;
+    line-height: 80px;
+    
+}
+#lineheight{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid red;
+    line-height:length;
+    
+}
+#lineheight{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid red;
+    line-height:length;
+    
+}
+#line-through{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid red;
+    text-decoration: line-through;
+    
+}
+#rgba{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid red;
+    color: rgba(34, 5, 8, .1);    
+}
+#shadow{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid red; 
+    text-shadow: 12px 12px 0px green;     
+}
+#pex{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid black;      
+}
+#rem1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid black;      
+}
+#rem2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid black;      
+}
+#rem4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid black;      
+}
+#cajas{
+    width: 16em;   
+    height: 16em;
+    background-color: blue;
+    border: 2px dashed black;
+}
+#cajas > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 16em;   
+    height: 16em;
+    background-color: green;
+}
+#sinviewpor{
+    width: 50em;   
+    height: 16em;
+    background-color: blue;
+    border: 2px dashed black;
+}
+#conviewpor{
+    width: 50vw;   
+    height: 50vh;
+    background-color: blue;
+    border: 2px dashed black;
+}
+#bloque{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+      background-color: pink;
+}
+.linea{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+      background-color: pink;
+}
+#xxxx{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: pink;
+}
+#xxxxx{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid black;      
+}
+
+.caontenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+ 
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+<div class="contenedor">
+    <img src="img/imagen_decorativa.png" width="-50%">
+    <div class="centrado">Centrado</div>
+  </div>
