@@ -1,94 +1,475 @@
+/* importamos la fuente de tipo  */
+/*@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body{
- 
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    background-color: #f4f3ea;
-}
-p#fondoverde{                /* posiciono el fondo verde */
-    position: relative;
-    background: #4a772f;
-    width: 100vw;
-    height: 220px;   
-    margin-bottom: 0px;    
-}
-
-
-#bosque{
-    position: absolute;
-    top: -1%;
-    size: 50%;
-    width: 100%;
-}
-#logo{
-    position: absolute;
-    left: 75%;
-    top: 2%;
-    width: 100%;
-}
-h1{
-    color: white;
-    font-family: 'Fjalla one', sans-serif;
-    font-size: 2.8rem;
-    text-align: center;
-    position: absolute;
-    top: 1%;
-    left: 31%;
-    
-    /*transform: translate(-50%, -50%); */
-}
-h5{
-    color: #adc4a4;
-    position: absolute;
-    font-size: 1.3rem;
-    top: 10%;
-    left: 43%;
-    
-}
-h5:hover{
-    text-shadow: 2px 2px 2px #82ee54;
-   /* text-shadow: 0 0 10px #fff, 0 0 20px #fff; /* efecto brillo*/
-}
-
-li,a,nav{
-    background-color: green;
-    color: white;
-
-}
-
-ul{
-    
-    list-style-type: none;
-    /*list-style: none; /*  */  
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: green;
-    /*display: inline-block;*/
-}
-li {
-    float: left;        /* asigno float para que el menú sea horizontal*/
-    font-size: 300px;
-}
-
+*{
   
- li a {
-    display: block;
-    color: white;
-    font-size: 20px;
-    padding: 16px;
-    text-decoration: none;
+    margin: 0;    
+    
+}
+body{
+    background: lightblue;
+    font-family: 'Open sans', sans-serif;
+    height: 1320px;    
+}
+
+/* CABECERA DE LA PÁGINA  */
+header{
+    position: relative;   
+    background: #4a772f;    
+    font-weight: 50rem;
+    color: white;   
+  
+}
+
+        /* FONDO VERED DE LA IMAGEN DEL BOSQUE */ 
+.fondoverde{
+    height: 250px;
+    width: 100%;    
+}
+        /* POSICIONAMIENTO DE LA IMAGEN DEL BOSQUE */ 
+.bosque{
+    position: absolute;
+    top: -10px;
     width: 100%;
-  }
-  a:hover{
-    background: yellow; /* #4a772f;*/
-    border: 2px solid yellow;
-    border-radius: 3% 3%;
- }
-  #elementouno{
-    margin-left: 37%;       /*  Desplazo el menu para que quede centrao */
+    height: 270px;
 }
-#inicio{
-    text-decoration: underline;
+
+        /* POSICIONAMIENTO DE LA IMAGEN DE LA SETA */ 
+.seta{
+    position: absolute;
+    top: 30px;
+    right: 100px;
 }
+
+        /* CONFIGURACIÓN Y POSICIONAMIENTO DEL TEXTO PRINCIPAL DE LA CABECERA*/ 
+header h1{
+    position: absolute;
+    font-family: 'Fjalla One', sans-serif ;
+    font-size: 2.8rem;    
+    left: 460px;
+    top: 30px
+}
+
+        /* CONFIGURACIÓN Y POSICIONAMIENTO DEL TEXTO SECUNDARIO DE LA CABECERA*/ 
+header h5{
+    position: absolute; 
+    font-size: 1.3rem;
+    color: #adc4a4;        
+    left: 600px;
+    top: 110px
+}
+header h5 a{
+    color: inherit;   
+    text-decoration: none;
+}
+
+        /* EFECTO DEL TEXTO SECUNDARIO DE LA CABECERA AL PASAR EL RATÓN*/     
+h5:hover{
+    text-shadow: 3px 3px 5px, 0 0 20px #fff; /* para efecto brillo*/    
+}
+
+/*  MENÚ DE NAVEGACIÓN DE LA CABECERA*/
+.nav-menu{
+    background: #7bc95d; /* color de fondo de la barra*/
+    background: #76c04b;
+    
+}
+.nav-menu ul{
+    padding: 1.2rem;
+    margin-left: 30%;  /* añado un margen para que el menú quede centrado*/
+        
+}
+
+.nav-menu ul li{
+    font-size: 20px;
+    display: inline;        /* selecciono inline para que la lista se vea en horizontal*/
+    padding: 0 20px 0 20px; /* un padding de 20 a derecha e izquierda para tener una separación entre las opciones*/
+    color: #4a772f;
+    
+}
+.nav-menu ul li a{
+    color: white;    /* color de letra*/ 
+    font-weight:bold;   /* negrita*/
+    padding: 0 10px 0 10px;  /* añadon un pequeño padding para que los botones del menú se vean mejor*/
+    text-decoration: none;
+    list-style: none;
+
+}
+.nav-menu ul li a:hover{
+    
+    background: #4a772f;
+    border-radius: 5px;
+}
+
+#actual a{
+    border-bottom: 2px solid white;
+}
+
+/*#################### Declaraciones para el contenido principal ################################# */
+
+/* SIDEBAR IZQUIERDA */
+
+.sidebar_izq{
+    float: left;
+    width: 8%;          /* El ancho es del 8% porque el del centro es de 80% con un padding de 20px  */
+    height: 100%; 
+}
+
+
+/* SIDEBAR DERECHA */
+
+.sidebar_der{
+    float: left;
+    width: 8%;          /* El ancho es del 8% porque el del centro es de 80% con un padding de 20px  */
+    height: 100%;       
+}
+
+/* MENU PRINCIPAL */
+
+   /* CONFIGURACIÓN GENERAL DEL MENÚ */
+
+main{
+    float: left;
+    width: 80%; 
+    background: white;
+    padding: 20px;
+    /*margin-left: 20%;*/
+    /*border: 5px solid #4a772f;  /* poner sombra*/
+}
+
+/* ######  SECCIÓN PRIMERA DEL MENÚ ######  */
+
+    /* CONFIGURACIÓN DE LA PRIMERA SECCIÓN DEL MENÚ */
+
+.primera{
+    float: left;
+    width: 100%;
+    background: #e5e0d3;                /* Color de fondo */ 
+}
+.primera h2{
+  
+    font-family: 'Fjalla One', sans-serif;  /* tipo de letra que se pide*/
+    text-align: center;                     /* Centro el título */
+    padding: 20px;  
+    color: #4a772f; 
+}
+    /* CONFIGURACIÓN DE LA TABLA DE LA PRIMERA SECCIÓN DEL MENÚ */ 
+.primera table{
+    
+    margin: 0 25px 0 25px;    /* Margen para que el contenido no quede pegado a los bordes */
+    color: #4a772f;         /* Color del texto */    
+}
+
+.primera td{
+   
+    width: 600px;
+    text-align: justify;      /* alineación del texto  */
+    padding: 20px;            /* Separación entre celdas */  
+   
+    font-family: 'Open sans', sans-serif;
+   
+              /* Separación entre celdas */
+}
+#textotabla{            /* El texto de la tabla lo queremos arriba del todo. */
+    float: left;
+
+}
+.primera .video{
+    width: 100%;            /* Tamaño del video dentro de la celda */
+    
+   
+}
+
+/* ########################## sección segunda #########################*/
+.segunda{
+    float: left;
+    background: rgb(117, 256, 290);
+    height: 300px;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+    /* Configuración del título  de la segunda sección "Información inportante"*/
+.segunda h2{
+    font-family: 'Fjalla One', sans-serif ;
+    text-align: center;
+    color: #4a772f; 
+    padding-top: 5%;   /* Hago espaciado solo en la parte de arriba para que no se quede muy pegado  */
+}
+
+.informacion{
+    
+    float: left;
+    width: 50%;
+    height: 180px;  
+}
+
+
+.segunda h3{    
+
+    font-family: 'Fjalla One', sans-serif ;   
+    color: #4a772f;     
+    padding: 30px 0 10px 20px;    
+}
+
+.segunda ul{
+    padding-left: 50px;    
+    
+}
+.segunda a{       /* configuro todos enlaces que hay la section dos porque tienen las mismas características*/
+
+    font-family: 'Open sans', sans-serif;
+    color: #4a772f;       /* asigno color*/  
+    text-decoration: none;  /* quito subrayado*/
+    font-weight: bold;      /* negrita*/
+}
+.segunda p{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.animacion{
+    position: relative;
+}
+.animacion::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 4px;
+    background:#8bb174;          /* Color de la línea que aparece */  
+    transition: width .3s ease;
+}
+.animacion:hover::after{
+    width: 90%;  
+}
+/* ########################## sección tercera #########################*/
+
+.tercera{
+    float: left;
+    width: 100%;
+    height: 640px;
+    background: #e5e0d3;                /* Color de fondo */ 
+}  
+.tercera h2{
+
+    font-family: 'Fjalla One', sans-serif;  /* tipo de letra que se pide*/
+    text-align: center;                     /* Centro el título */
+    padding: 50px 20px 20px 20px;  
+    color: #4a772f;         
+}
+.actividades{
+    float: left;
+    overflow: hidden;    
+    margin: 20px auto;
+
+}
+
+.actividad{
+    float: left;
+    width: 22%;
+    margin: 1.5%;
+    text-align: center;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.actividad:nth-child(5){
+    clear: both;
+} 
+
+.actividad img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;    
+}
+.subtitulo{
+    display: block;
+    font-weight: bold;
+    color: #4a772f;    
+}
+
+.actividad:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2)
+}
+
+
+
+
+
+/* ########################## pie #########################*/
+footer h3{
+    padding: 5px;
+}
+/*  Decalaración para el pie de página */
+footer{
+    float: left;
+    background: #4a772f;
+    color: white;   
+    font-family:sans-serif;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+
+
+/* ######################  PÁGINA PROGRAMACION.HTML  ######################  */
+
+
+        /* CONFIGURACIÓN Y POSICIONAMIENTO DEL TEXTO PRINCIPAL DE LA CABECERA*/ 
+
+
+.header_programacion h1{
+
+    position: absolute;
+    font-family: 'Fjalla One', sans-serif ;
+    font-size: 2.8rem;    
+    left: 540px;
+    top: 85px
+}
+.header_programacion h2{
+    position: absolute;
+    font-family: 'Fjalla One', sans-serif ;
+    font-size: 1.8rem;    
+    left: 520px;
+    top: 30px
+}
+.header_programacion h5{
+    position: absolute; 
+    font-size: 1.3rem;
+    color: #adc4a4;        
+    left: 490px;
+    top: 160px
+}
+.main_programacion{
+    float: left;
+    width: 80%; 
+    background: white;    
+    padding: 20px;
+}
+
+/* ##########  CONFIGURACIÓN DE LA SECCIÓN UNO PÁGINA PROGRAMACIÓN ########## */
+.main_programacion .uno{
+    float: left;
+    width: 100%;
+    height: 570px;
+    background: rgb(233, 241, 240);  
+    
+}
+
+/* ########## CONFIGURACIÓN DE LA TABLA ########## */
+
+.main_programacion table{
+    border: 1px solid black;
+    width: 98%;
+    margin: 10px;
+    border-collapse: collapse;
+    background: #fff;
+    
+}
+/* Configuración encabezado de la tabla */
+
+.main_programacion caption{
+    color: #4a772f;
+    font-weight: bold;
+    padding: 20px;
+}
+.main_programacion table th{
+    background: #7ec754; /* pongo este color porque se ven mejor las letras */
+}
+
+/* configuración resto de tabla  */
+
+.main_programacion table td{
+    border: 1px solid grey;  /* pongo un borde en las celdas  */    
+}
+
+/* Configuro para que las líneas pares se vean de un color y las impares de otro */
+
+.main_programacion tr:nth-child(odd){   /* he tenido que poner odd para que coincida con el ejemplo. */
+    background: #8bb1746e;
+}
+
+td{ 
+    text-align: center; /* centro los datos de las columnas */
+    width: 150px;    
+}
+
+/* configuro la columna taller para que no este centrado y tenga un margen a la izquierda*/
+.taller{
+    text-align: left;
+    width: 370px;
+    padding-left: 10px;
+    
+}
+
+.colponente li{
+    list-style: none; /* quito los puntos de la lista */ 
+    width: 350px;       /* asigno un ancho a la celda a la columna ponente para que no descuadre.*/
+    text-align: left;  /* alineado a la izquierda */      
+    margin-left: 15px;         
+}
+
+.autor{
+    font-weight: bold;  
+    text-align: left;
+    margin-left: 15px;
+     
+}
+.colfecha, .colponente{
+    background: white;  /* fuerzo que el fondo de la primera columna sea blanco */    
+}
+
+/* ##########  CONFIGURACIÓN DE LA SECCIÓN DOS PÁGINA PROGRAMACIÓN ########## */
+.main_programacion .dos{
+    float: left;
+    width: 100%;
+    height: 900px;
+    background: #e5e0d3;  
+    margin-top: 40px;    
+}
+      
+.dos h2, .dos h3{
+    text-align: center;
+    color: #4a772f;
+    font-family: 'Open sans', sans-serif;
+    padding-top: 30px;    
+}
+#horario{
+    padding: 10px 0 10px 0;
+}
+.horario_izq{
+    float: left;    
+    width: 50%;
+    height: 700px;
+
+}
+.horario_der{
+    float: left;    
+    width: 50%;
+    height: 700px;    
+}
+
+.dos p{
+    font-weight: bold;
+    margin-left: 20px;
+}
+.dos li{
+    margin-left: 45px;
+}
+
+
+
+

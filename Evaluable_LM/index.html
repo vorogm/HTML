@@ -1,40 +1,131 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>II Jornadas de Micología</title>
-    <link rel="icon" type="image/jpg" href="img/logo_hongo.jpg"> <!-- Colocamos un icono en la pestaña del navegador-->
-    <link rel="stylesheet" href="css/estilos.css">               <!-- Enlazamos la hoja CSS-->
-    <meta name="theme-color" content="black">                    <!--Ponemos un color en la pestaña-->
-    <meta name="description" content="II Jornadas de Micología"> <!-- La descripción es importante para el SEO-->
-
+    <title>II Jornadas de Micología - HOME</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body> 
-    <header>
-                <!-- Pinto un fondo verde -->
-        <p id="fondoverde"></p>
-        
-                <!-- Coloco la imagen del bosque -->
-        <p id="bosque"><img src="img/imagen_decorativa.png" alt="imagen de un bosque" width="100%" height="240" ></p>
-        <p id="logo"><img src="img/logo_hongo.png" alt="imagen de un bosque"></p>
+<body>
+    <header class="header">
+        <div class="fondoverde">
+            <img class="bosque" src="img/imagen_decorativa.png"> 
+            <img class="seta" src="img/logo_hongo.png"> 
 
-                <!-- Coloco los textos-->
-        <h1>II Jornadas de Micología</h1>            
-        <h5 id="texto">Soria, 10 y 11 de Noviembre de 2024</h5>     
+        </div>
+        <h1>II Jornadas de Micología</h1>
+        <h5><a href="https://es.wikipedia.org/wiki/Soria" target="_blank">Soria</a>, 10 y 11 de Noviembre de 2024</h5>
+        <div>
+            
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li id="actual"><a href="index.html">INICIO</a></li>
+                <li><a href="programacion.html">PROGRAMACIÓN</a></li>
+                <li><a href="inscripcion.html">REGISTRO</a></li>               
+            </ul>
+        </nav>
+          
     </header>
+
+    <!--   ######################  menu principal  ######################-->
+
+    <!--  Creo bara sidebar de la derecha aunque no tendrá contenido-->
+    <section class="sidebar_izq">        
+    </section>
+    
+    <!-- Creo el menú principal que tendrá tres secciones -->
+    <main>
+
+        <!-- Sección primera que es la central -->
+        
+        <section class="primera">
+            <h2>Acerca del Evento</h2>
+            <table>
+                <tr>
+                    <td id="textotabla">
+                        <p>Las jornadas de Micología reúnen a expertos y amantes de los hongos para compartir conocimientos, explorar su importancia ecológica y disfrutar de actividades prácticas en la naturaleza.</p>
+                    </td>
+                    <td>
+                        <video controls class="video">
+                            <source src="media/video_evento.mp4" type="video/mp4">
+                        </video>
+                    </td>                    
+                </tr>
+            </table>
+        </section>
+
+            <!-- Sección segunda que es la central -->
+
+        <section class="segunda">
+            <h2>Información importante</h2>
+            <div class="informacion">
+                <h3 class="animacion">¿Dónde?</h3>
+                <ul>
+                    <li>Auditorio Municipal</li>
+                    <li>Plaza mayor ed Burgos, 9001</li>
+                    <li>Telf: 947000000</li>
+                    <li>Email: <a href="mailto:info@micologia.org">info@micologia.org</a></li>
+                </ul>
+            </div>
+            <div class="informacion">
+                <h3 class="animacion">¿Cuándo?</h3>
+                <ul>
+                    <li>Domingo, 10 de marzo, de 10:00 a 19:00 h</li>
+                    <li>Lunes, 11 de marzo, de 9:00 a 18:00 h</li>                    
+                </ul>
+                <p>Entrada libre con <a href="inscripcion.html">inscripción</a> previa</p>
+            </div>
+        </section>
+        <section class="tercera">            
+            <h2>Actividades destacadas</h2>
+            <div class="actividades">
+                <div class="actividad">
+                    <img src="img/Ident_setas.jpg" alt="Taller de indentificación de setas">     
+                    <span class="subtitulo">Taller de indentificación de setas</span>                          
+                </div>
+                <div class="actividad">
+                    <img src="img/cocina_hongos.jpg" alt="Cocina con hongos"> 
+                    <span class="subtitulo">Cocina con hongos</span>
+                </div>
+                <div class="actividad">
+                    <img src="img/senderismo.jpg" alt="Senderismo micológico">
+                    <span class="subtitulo">Senderismo micológico</span>
+                </div>
+                <div class="actividad">
+                    <img src="img/micologia_medicinal.jpg" alt="Aplicaciones medicinales">
+                    <span class="subtitulo">Aplicaciones medicinales</span>
+                </div>              
+               
+                <div class="actividad">
+                    <img src="img/images.jpg" alt="Arte inspirado en hongos">
+                    <span class="subtitulo">Arte inspirado en hongos</span>
+                </div>
+                <div class="actividad">
+                    <img src="img/biotecnologia.jpg" alt="Biotecnología y hongos">
+                    <span class="subtitulo">Biotecnología y hongos</span>
+                </div>
+                <div class="actividad">
+                    <img src="img/juegos.jpg" alt="Juegos educativos sobre hongos">
+                    <span class="subtitulo">Juegos educativos sobre hongos</span>
+                </div>
+                <div class="actividad">
+                    <img src="img/conservacion.jpg" alt="Conservación de hongos">
+                    <span class="subtitulo">Conservación de hongos</span>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <section class="sidebar_der">
+        
+    </section>
+
+    <footer>
+        <h3>Actividad realizada por <strong>Salvador García Molina</strong>, para la asignatura de Lenguaje de Marcas</h3>
+        <h3>Curso 2024/25</h3>
+    </footer>
    
-    <nav>
-        <ul>
-            <!-- Asigno id solo al primero para desplazarlo a la derecha solo el primer elemento
-                    Y asigno href para navegar por las diferentes páginas-->
-
-            <li id="inicio"><a href="index.html">INICIO</a></li>
-            <li><a href="programacion.html" target="_blank">PROGRAMACIÓN</a></li>
-            <li><a href="inscripcion.html" target="_blank">REGISTRO</a></li>           
-         </ul>
-    </nav>
-
     
 </body>
 </html>
